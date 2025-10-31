@@ -1,0 +1,46 @@
+{
+  "name": "procedural-world-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\"",
+    "test": "vitest",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "postcss": "^8.4.0",
+    "prettier": "^2.8.0",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.0",
+    "vitest": "^0.26.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{css,md,json}": [
+      "prettier --write"
+    ]
+  }
+}
